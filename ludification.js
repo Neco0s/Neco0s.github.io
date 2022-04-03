@@ -8,10 +8,10 @@ var player = {
     y : innerHeight / 2,
     size : 84,
     orientation : 0,
-    interact: {
-        able: false,
-        range: 100,
-        using: false
+    interact : {
+        able : false,
+        range : 100,
+        using : false
     },
     speed : {
         x : 0,
@@ -210,6 +210,32 @@ function drawPlayer() {
 
     ctxView.drawImage(PlayerImage, - player.size / 2, - player.size / 2, player.size, player.size);
     ctxView.restore();
+    if (!(player.move.up || player.move.down || player.move.right || player.move.left)) {
+        let text = "WASD/ZQSD - Déplacements";
+        let textY = player.y - 25;
+        let textX = player.x + 50;
+        ctxView.font = "1em Verdana";
+        ctxView.fillStyle = "white";
+        ctxView.strokeStyle = "black";
+        ctxView.strokeText(text, textX, textY);
+        ctxView.fillText(text, textX, textY);
+        if (!player.scan.active) {
+            text = "Espace - Scanner";
+            textY = player.y;
+            ctxView.strokeText(text, textX, textY)
+            ctxView.fillText(text, textX, textY)
+        }
+        if (player.interact.able) {
+            let text = "E - Interagir";
+            let textY = player.y + 25;
+            let textX = player.x + 50;
+            ctxView.font = "1em Verdana";
+            ctxView.fillStyle = "white";
+            ctxView.strokeStyle = "black";
+            ctxView.strokeText(text, textX, textY);
+            ctxView.fillText(text, textX, textY);
+        }
+    }
 }
 
 function showFeatures(projet) {
