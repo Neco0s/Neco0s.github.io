@@ -1,0 +1,178 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow: hidden;
+    background: url('https://brickpartybags.co.uk/wp-content/uploads/2018/02/space-nebula-background-tile.jpg');
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.resource {
+    display: none;
+    background: none;
+}
+
+#PlayerCanvas {
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.projet {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-size: contain;
+}
+
+#Stu1 {
+    background-image: url('Resources/Stu1.png');
+}
+
+#Stu2 {
+    background-image: url('Resources/Stu2.png');
+}
+
+#Stu3 {
+    background-image: url('Resources/Stu3.png');
+}
+
+.proj_desc {
+    position: absolute;
+    left: 150px;
+    top: 100px;
+    width: 400px;
+    border-radius: 1em;
+    border: 1px lightblue solid;
+    color: lightblue;
+    opacity: .8;
+    background-color: rgba(0, 0, 0, .625);
+    box-sizing: border-box;
+    box-shadow: 0 0 2px 2px lightblue;
+}
+
+.proj_banner {
+    object-fit: cover;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.proj_title {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 1px lightblue solid;
+    padding-bottom: 10px;
+}
+
+.proj_sample {
+    text-align: justify;
+    margin: 0px 10px 40px 10px;
+}
+
+.proj_specs {
+    margin: 0px 10px 20px 10px;
+}
+
+.proj_specs>div {
+    color: black;
+    display: inline-block;
+    border-radius: 1em;
+    padding: 4px 7px 4px 7px;
+    margin: 5px;
+}
+
+.proj_specs_date {
+    background-color: green;
+}
+
+.proj_specs_software {
+    background-color: red;
+}
+
+.proj_specs_team {
+    background-color: orange;
+}
+
+.proj_specs_type {
+    background-color: yellow;
+}
+
+.hidden {
+    display: none !important;
+    opacity: 0;
+}
+
+.proj_page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+}
+
+.cross {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+
+.header {
+    width: 100%;
+    background-size: cover;
+    line-height: 200px;
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+}
+
+.page_body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: 100%;
+    color: gold;
+    background-color: rgba(0, 0, 0, .65);
+    overflow-y: auto;
+}
+
+.page_body>* {
+    text-align: justify;
+    padding: 0 10px 0 10px;
+    margin: 15px 0 15px 0;
+}
+
+.page_body_mid {
+    border-right: 1px solid gold;
+    border-left: 1px solid gold;
+}
+
+.float_right {
+    float: right;
+    margin-left: 10px;
+}
+
+.float_left {
+    float: left;
+    margin-right: 10px;
+}
+
+.Stu2_variable {
+    text-align: center;
+    display: inline-block;
+    height: 8em;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="ludification.css">
+    </head>
+    <body style="
+    background-position-x: 0px;
+    background-position-y: 0px;">
+        <img src="Resources/SpaceShip.png" class="resource" id="PlayerImage">
+        <canvas id="PlayerCanvas"></canvas>
+        <div class="projet" id="Stu1"
+        style="
+        bottom: 150px;
+        right: 400px;"><div class="proj_desc hidden">
+                <img src="Resources/BeachInvasion/Gameplay.png" class="proj_banner">
+                <h1 class="proj_title">Beach Invasion</h1>
+                <p class="proj_sample">Projet de première année supérieure. Tower Defense inspiré par la série des Kingdom Rush. Il est possible de placer, améliorer et détruire 4 types de tourelles sur des emplacements définis.</p>
+                <div class="proj_specs">
+                    <div class="proj_specs_software">Construct 2</div>
+                    <div class="proj_specs_type">Tower Defense</div>
+                    <div class="proj_specs_team">Solo</div>
+                    <div class="proj_specs_date">Novembre 2019</div>
+                </div>
+            </div>
+        </div>
+        <div class="projet" id="Stu2"
+        style="
+        bottom: 800px;
+        right: 1500px;"><div class="proj_desc hidden">
+                <img src="Resources/Code×it/Gameplay.png" class="proj_banner">
+                <h1 class="proj_title">Code×it</h1>
+                <p class="proj_sample">Projet de Serious Game mélangeant puzzle et algorithmie de milieu de deuxième année supérieure. Le joueur doit interagir avec des cubes et les placer dans des alogrithmes lacunaires.</p>
+                <div class="proj_specs">
+                    <div class="proj_specs_software">Unity</div>
+                    <div class="proj_specs_type">Puzzle</div>
+                    <div class="proj_specs_team">Trio</div>
+                    <div class="proj_specs_date">Novembre 2019</div>
+                </div>
+            </div>
+        </div>
+        <div class="projet" id="Stu3"
+        style="
+        bottom: 1000px;
+        right: -50px;"><div class="proj_desc hidden">
+                <img src="Resources/TimeLeap/Gameplay.png" class="proj_banner">
+                <h1 class="proj_title">Time Leap</h1>
+                <p class="proj_sample">Projet de jeu sous Blueprint Unreal de fin de deuxième année supérieure. Le joueur doit arriver à un faisceau de lumière en traversant des épreuves de blocs apparaissant et disparaissant selon un schéma défini.</p>
+                <div class="proj_specs">
+                    <div class="proj_specs_software">Unreal</div>
+                    <div class="proj_specs_software">Blueprint</div>
+                    <div class="proj_specs_type">Platformer</div>
+                    <div class="proj_specs_team">Solo</div>
+                    <div class="proj_specs_date">June 2021</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECT PAGES -->
+        <div class="proj_page Stu1 hidden">
+            <img src="Resources/Cross.png" class="cross">
+            <h1 class="header" style="background-image: url('Resources/BeachInvasion/Gameplay.png'); background-position: 0 9%;">Beach Invasion</h1>
+            <div class="page_body">
+                <p>
+                    Beach Invasion est un prototype de jeu typé tower defense fortement inspiré de la série de jeux <i>Kingdom Rush</i> réalisé en solo sur le moteur de jeu <i>Construct 2</i>. Il se base sur un système labyrinthique où les tours peuvent être placées à des emplacments précis et les ennemis suivent un itinéraire donné.
+                    <br><br>Il existe basiquement deux types d'ennemis : les ennemis terrestres et les ennemis volants, avec des statistiques de points de vie et de vitesse pouvant différer. Tous suivent le tracé du labyrinthe.
+                    <br>Un boss conclut chaque niveau et a pour particularité de faire perdre toutes ses vies au joueur s'il atteint la zone d'arrivée.
+                    <br><br>Les tourelles se divisent quant à elles en quatre types, les mitrailleuses, les lance-missiles, les batteries anti-aériennes et les mortiers.
+                    <br><br><img class="float_right" style="height: 4em;" src="Resources/BeachInvasion/MachineGun.png">La mitrailleuse est la tourelle de base. Elle peut cibler tous les ennemis, a une portée moyenne et de faibles dégâts compensés par une grosse cadence de tir. Elle a un prix de départ faible.
+                    <br><br><img class="float_left" style="height: 4em" src="Resources/BeachInvasion/Rocketeer.png">Le lance-roquettes est la tourelle à longue distance du jeu, elle a des dégâts élevés et peut toucher les ennemis malgré une cadence de tir faible. Son prix de départ est élevé.
+                    <br><br><img class="float_right" style="height: 4em" src="Resources/BeachInvasion/Anti-Air.png">La batterie anti-aérienne descend les ennemis aériens avec une cadence de tir et des dégâts supérieurs à la mitrailleuse mais sur une portée réduite et avec un prix plus élevé mais abordable.
+                    <br><br><img class="float_left" style="height: 4em;" src="Resources/BeachInvasion/Bomber.png">Le mortier tire des projectiles lents pouvant manquer les cibles rapides et a une portée très faible mais fait des dégâts de zone énormes malgré sa très faible cadence et son prix élevé.
+                    <br><br><img class="float_right" style="height: 4.5em;" src="Resources/BeachInvasion/Upgrade.png">Les améliorations de tourelles sont visibles et augmentent la cadence de tir ou la portée de ces dernières. Le prix d'une tourelle est augmenté à chaque fois qu'une tourelle du même type est posée ou améliorée, il est possible de les revendre pour leur prix de base mais l'inflation ne diminue pas.
+                </p>
+                <p class="page_body_mid">
+                    <img class="float_right" style="height: 7em;" src="Resources/BeachInvasion/Selected.png">Le prototype est produit sous <i>Construct 2</i> et utilise les comportements de <i>Tourelle</i>, de <i>Pathfinding</i> et de <i>Projectile</i>. Les tourelles sont placées grâce à la souris et à des raccourcis clavier indiqués sur l'interface, le retrait se fait avec la touche "D" et l'amélioration grâce à la touche "U", il faut sélectionner un emplacement avant de pouvoir exécuter les actions choisies.
+                    <br><br>Les tourelles utilisent le comportement éponyme, elles ciblent le premier ennemi qui arrive dans leur champ de vision et lui tirent dessus jusqu'à destruction avant de passer au suivant. Elles tournent visuellement vers la direction de leur cible et n'anticipent pas les mouvements de cette dernière lors de la visée.
+                    <br><br>Les projectiles utilisent également un comportement éponyme et se détruisent à l'impact ou après avoir traversé une certaine distance. Les projectiles du mortier provoquent une explosion lors de leur destruction, laquelle endommage tous les ennemis touchés. La portée des projectiles est supérieure au champ de vision de leur tourelle.
+                    <br><br><img class="float_right" style="height: 3em;" src="Resources/BeachInvasion/Spawner.png">Les ennemis sont mus par le comportement de <i>Pathfinding</i> et ont un mapping régi par des solides invisibles. Ils apparaissent au niveau d'un élément <i>spawner</i> avec un décompte propre à chaque ennemi. Leur arrivée est définie par un objet <i>finish</i>.<img class="float_left" style="height: 3em;" src="Resources/BeachInvasion/Finish.png"> Le nombre d'ennemis par vague est fixé par type d'ennemi. Le nombre d'ennemis en simultané est limité et la destination choisie lorsque plusieurs arrivées existent est aléatoire. Chaque ennemi atteignant une arrivée est détruit et retire une vie à l'utilisateur à l'exception du boss qui fait perdre le joueur.
+                    <br><br><img class="float_left" style="height: 7em;" src="Resources/BeachInvasion/Pause.png">Il existe un menu pause accessible en appuyant sur la touche "P". Ce menu permet de reprendre, de recommencer ou d'abandonner la partie en cours. De nombreuses variables sont globales et doivent être réinitialisées en cas de recommencement ou d'abandon de la partie.
+                </p>
+                <p>
+                    Ce prototype a été produit en solo dans le cadre d'un projet scolaire en première année d'études supérieures. Sa dernière version date du 12 novembre 2019 et a été mon premier protoype de jeu abouti. Il m'a demandé de me familiariser avec les systèmes de <i>Pathfinding</i> et de <i>Tourelle</i> en quelques jours.
+                    <br><br><img class="float_left" style="height: 9em;" src="Resources/BeachInvasion/KingdomRushGameplay.jpg"> Je me suis largement inspiré de <i>Kingdom Rush</i> pour ce projet, un jeu que j'aime beaucoup et ai fini plusieurs fois et dont j'ai pu comprendre certains rouages en imaginant et en développant mon prototype. Il s'agit également d'un <i>Tower Defense</i> utilisant un système labyrinthique avec un une séparation de dégâts magiques et physiques en plus des ennemis volants ou terrestres.
+                    <br><br>Ennemis :<br>
+                    <img style="height: 4.5em;" src="Resources/BeachInvasion/Jeep.png">
+                    <img style="height: 4.5em;" src="Resources/BeachInvasion/Tank.png">
+                    <img style="height: 4.5em;" src="Resources/BeachInvasion/Avion.png">
+                    <img style="height: 6em;" src="Resources/BeachInvasion/Boss.png">
+                    <br><br>Exemple de carte :<br>
+                    <img style="width: 70%; margin-left: 15%;" src="Resources/BeachInvasion/Map.png">
+                </p>
+            </div>
+        </div>
+        <div class="proj_page Stu2 hidden">
+            <img src="Resources/Cross.png" class="cross">
+            <h1 class="header" style="background-image: url('Resources/Code×it/Gameplay.png'); background-position: 0 45%;">Code×it</h1>
+            <div class="page_body">
+                <div>
+                    Code×It a été réalisé en trio avec deux autres élèves de l'école de Ludus Académie sur une période d'une semaine. Il s'agit d'un prototype de jeu sérieux mêlant plateforme, puzzle et algorithmie. Il comporte plusieurs blocs ayant chacun la caractéristique d'un type de variable.
+                    <br><br><div style="text-align: center;">
+                        <div class="Stu2_variable"><img src="Resources/Code×it/Char.png" height="65%"><br>Caractère</div>
+                        <div class="Stu2_variable"><img src="Resources/Code×it/Int.png" height="65%"><br>Entier</div>
+                        <div class="Stu2_variable"><img src="Resources/Code×it/Float.png" height="65%"><br>Réel</div>
+                        <div class="Stu2_variable"><img src="Resources/Code×it/String.png" height="65%"><br>Chaine</div>
+                        <div class="Stu2_variable"><img src="Resources/Code×it/True.png" height="65%"><br>Booléen<br>"Vrai"</div>
+                        <div class="Stu2_variable"><img src="Resources/Code×it/False.png" height="65%"><br>Booléen<br>"Faux"</div>
+                    </div>
+                    Les booléens sont les seuls blocs dont la couleur dépend de la valeur de la variable, afin de les différencier plus facilement en raison du nombre peu élevé de valeurs possibles.
+                    <br><br>Le jeu se déroule dans un schéma de colier à perles où le joueur traversera plusieurs salles avec des algorithmes à compléter afin de passer à la salle suivante tout en apprenant les bases de l'algorithmie et de la programmation.
+                    <br><br>Trois niveaux sont planifiés et le premier a été réalisé. Ce dernier se concentre sur les types de variables tandis que le second se focaliserait sur le fonctionnement des conditions. Le troisième apporterait la notion de boucle itérative.
+                    <br><br>Le joueur a la capacité de se déplacer dans toutes les directions au sol, il peut également activer un boost en roulant vers l'avant, d'attraper les blocs-variables et de sauter. En revanche, un bloc variable inséré dans le bon emplacement ne peut pas être récupéré.
+                    <br><br><img class="float_right" src="Resources/Code×it/Emplacement.png" style="height: 6em;">Les portes sont reliées à des cubes spéciaux avec un emplacement. Chaque emplacement ne peut recevoir qu'une bonne réponse mais un bloc peut se trouver dans plusieurs emplacements. Ces emplacements complètent un algorithme situé en général à côté.
+                </div>
+                <div class="page_body_mid" style="display: flex; align-items: center;">
+                    <div>
+                        Le prototype est construit sous le moteur Unity, les déplacements sont gérés à partir des touches WASD ou ZQSD et le saut avec la barre espace. Le joueur peut être orienté avec la souris et il peut attraper les objets avec le clic gauche.
+                        <br><br><img class="float_left" src="Resources/Code×it/CSS.jpg" style="height: 4em;">Le jeu prend des inspirations graphiques du côté de <i>Counter Strike : Source</i> avec le côté "blocs sans texture" et le ton orangé est gardé.
+                        <br><br>Le jeu est uniquement jouable en solo et est très court, cela permet de rejouer facilement certains niveaux afin de revoir une notion mal comprise.
+                        <br><br>Les blocs de variable sont récupérés par le joueur et accrochés aux emplacements en en devenant enfant. Il est possible avec la molette de le rapprocher ou de l'éloigner du joueur lorsqu'il en est enfant. Si le bloc tombe en dehors des limites de la map, il est réinitialisé.
+                        <br><br>Chaque niveau s'arrête lorsque le joueur entre dans une salle couverte, il peut accèder aux niveaux via le menu principal. Il existe également un menu pause permettant de reprendre, revenir au menu principal ou fermer le jeu.
+                        <br><br>Mon implication dans ce projet est située principalement autour de la rédaction du document expliquant le concept du jeu, de l'animation d'ouverture des portes ainsi que son activation et l'implémentation du système de déplacement.
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <div>
+                        Les inspirations pour le gameplay sont à retrouver au niveau de <i>Human Resource Machine</i> et de jeux tels que <i>Portal</i>.
+                        <br><br><i>Protal</i> est un bon exemple de jeu de Puzzle avec des salles et des cubes à récupérer et placer.
+                        <br><br><img class="float_right" src="Resources/Code×it/Portal.jpg" style="height: 10em;">Les environnements sont par ailleurs assez similaires et les déplacements se ressemblent assez fort. <i>Portal</i> a pour mécanique principale d'utiliser des portails afin de relier un point A à un point B et les puzzles sont très souvent liés à ceux-là. Le Level Design de ce jeu était une bonne base pour créer le nôtre.
+                        <br><br><br><i>Human Resource Machine</i> est quant à lui un jeu dont la logique est très pertinente pour l'inspiration au niveau de l'apprentissage.
+                        <br><br><img class="float_left" src="Resources/Code×it/HRM.jpg" style="height: 10em;"><br>Son système de blocs à placer dans un ordre précis afin d'obtenir un résultat escompté est très élaboré. Le prototype est à un stade moins développé mais il est également assez différent pour éviter de souffrir de la comparaison.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="proj_page Stu3 hidden">
+            <img src="Resources/Cross.png" class="cross" style="background-color: gold;">
+            <img src="Resources/TimeLeap/Gameplay.png" style="display: block; margin: auto;">
+        </div>
+    </body>
+    <script src="ludification.js"></script>
+</html>
